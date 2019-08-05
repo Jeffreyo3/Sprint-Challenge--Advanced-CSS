@@ -1,1 +1,25 @@
 // Navigation code here
+nav {
+    margin: 0 auto;
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+
+    h1 {
+        .flexbox();
+        font-size: 3.5rem;
+        color: @header-font-color;
+        margin: 2% auto;
+    }
+
+    .nav-a {
+        margin: 1% auto;
+        width: 45%;
+        .flexbox();
+
+        a{
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.6rem;
+        }
+    }
+}
