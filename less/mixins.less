@@ -2,4 +2,25 @@
 .flexbox() {
     display: flex;
     justify-content: space-evenly;
+    margin: 1.5% auto;
+}
+
+.standard-font() {
+    font-size: 1.6rem;
+}
+
+.button(@txt-color, @bg-color) {
+    cursor: pointer;
+    .standard-font();
+    display: inline-block;
+    padding: 2% 5%;
+    border-radius: 4px;
+    color: @txt-color;
+    background-color: @bg-color;
+
+    &:hover {
+        color: @bg-color;
+        background-color: @txt-color;
+    }
+
 }
