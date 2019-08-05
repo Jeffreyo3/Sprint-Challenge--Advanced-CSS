@@ -161,9 +161,19 @@ p {
   margin: 0 auto;
 }
 nav {
-  margin: 0 auto;
-  background-color: #F6F6F6;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(246, 246, 246, 0.658);
   border-bottom: 1px solid #F1F1F1;
+}
+@media (max-width: 500px) {
+  nav {
+    position: relative;
+    background-color: #F6F6F6;
+  }
 }
 nav h1 {
   display: flex;
@@ -202,6 +212,14 @@ footer {
 }
 .home {
   font-size: 1.6rem;
+}
+.home .intro {
+  padding-top: 100px;
+}
+@media (max-width: 500px) {
+  .home .intro {
+    padding-top: 0;
+  }
 }
 .home .intro img {
   width: 100%;

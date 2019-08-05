@@ -1,8 +1,17 @@
 // Navigation code here
 nav {
-    margin: 0 auto;
-    background-color: @nav-bg;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    background-color: @nav-bg-op;
     border-bottom: 1px solid @nav-border;
+
+    @media @phone {
+        position: relative;
+        background-color: @nav-bg;
+    }
 
     h1 {
         .flexbox();
